@@ -1,0 +1,385 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: #f4f4f4;
+    width: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+position: relative;
+display: flex;
+justify-content: center;
+align-items:center;
+padding:20px;
+width: 80%;
+margin: 0 auto;
+}
+
+.row_one{
+    width: 100%;
+    padding: 26px;
+}
+
+.row_one .col_one{
+width: 35%;
+position: relative;
+}
+
+.row_one .col_two{
+    position: relative;
+    width: 95%;
+    padding: 20px 0;
+}
+
+.row_one .col_two h1{
+    color: #000000;
+    padding: 16px 0;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+.row_one .col_two p{
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.container .row-two{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 25px;
+}
+
+.container .row-two form{
+    position: relative;
+    background: #ffffff;
+    border: none;
+    padding: 20px 10px;
+    border-radius: 5px;
+}
+
+
+.row-two form .single_row_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.form-group label{
+    font-size: 16px;
+    position: relative;
+    padding: 8px;
+    
+}
+
+.form-group .form-control{
+    padding: 10px;
+    outline: none;
+    margin: 8px;
+    border: 2px solid lightcyan;
+    border-radius: 5px;
+    transition: 0.1s ease-in;
+}
+
+.form-group .form-control:focus{
+    border: 2px solid lightblue;    
+}
+
+
+.form-group .form-control, ::placeholder{ 
+    font-size: 14px;
+    font-weight: normal;
+    color: gray;
+    letter-spacing: 1px;
+ 
+}
+
+form button{
+    background:#20b2aa;
+    color: #f4f4f4;
+    position: relative;
+    font-size: 18px;
+    font-weight: normal;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    width: 98%;
+    padding: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 5px;
+    margin: 14px auto;
+    letter-spacing: 1px;cursor:pointer;
+}
+
+form p.terms{
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 2px;
+    position: relative;
+}
+
+form p.terms a.link{
+    text-decoration: none;
+    color: #20b2aa;
+}
+.inline-icon, .inline-icon-2{
+    position: relative;
+}
+.form-group.inline-icon .span{
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    z-index:0;
+    overflow: hidden;
+}
+.form-group.inline-icon-2 .span{
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    z-index:0;
+    overflow: hidden;
+    cursor:pointer;
+}
+
+.inline-icon > .span i.fas, .inline-icon-2 > .span i.fas{
+    color: #333;
+    position: relative;
+}
+
+
+/*============= On Mobile Screen Less than 995px =============*/
+@media only screen and (max-width:995px){
+    .container{
+        width: 95%; 
+        }
+}
+/*============= On Mobile Screen Less than 855px =============*/
+@media only screen and (max-width:855px){
+    .container{
+        width: 100%; 
+        }
+
+        .row_one{
+            padding: 16px;
+        }
+    
+
+}
+
+
+
+/*============= On Mobile Screen Less than 855px =============*/
+@media only screen and (max-width:655px){
+    .container{
+        flex-direction: column;
+        padding: 15px;
+        width: 100%;
+        margin: 0 auto;
+        }
+
+        .container .row-two form{
+            border: 1px solid lightblue;
+            padding: 15px;
+            
+        }
+
+        
+
+        .row-two form .single_row_wrapper{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group{
+            width:100%;
+        }
+    
+
+        .form-group.inline-icon .span{
+            top: 37px;
+            right: 35px;
+        }
+    
+        .form-group.inline-icon-2 .span{
+            top: 37px;
+            right: 48px;
+        }
+        
+        .container .row-two{
+            padding: 18px;
+        }
+        
+}
+
+/*============= On Mobile screen lessthan 595px ===================*/
+@media only screen and (max-width:595px){
+    .container{
+        flex-direction: column;
+        padding: 8px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    .row-two form .single_row_wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        margin: 0 auto;
+        position: relative;
+        width: 100%;
+
+    }
+
+    .form-group{
+        width:100%;
+    }
+
+    .form-group .form-control{
+        display: flex;
+        position: relative;
+        width: 100%;
+        margin: 10px auto;
+        
+    } 
+
+
+
+}
+
+
+/*============= On Mobile Screen Less than 455px =============*/
+@media only screen and (max-width:495px){
+    .container{
+        flex-direction: column;
+        padding: 8px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .row-two form .single_row_wrapper{
+    width: 100%;
+    }
+
+    .form-group .form-control{
+        position: relative;
+        width: 100%;
+        margin: 8px;
+        
+    }
+
+    .row_one{
+        padding: 16px;
+    }
+
+    .row_one .col_two{
+        width: 100%;
+
+    }
+    .form-group{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        position: relative;
+    }
+        
+    .container .row-two{
+        padding: 15px;
+    }
+
+    .form-group.inline-icon .span{
+        top: 52px;
+        right: 30px;
+    }
+
+    .form-group.inline-icon-2 .span{
+        top: 52px;
+        right: 30px;
+    }
+    
+}
+
+
+/*============= On Mobile Screen Less than 355px =============*/
+@media only screen and (max-width:355px){
+    .container{
+        flex-direction: column;
+        padding: 2px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .row-two form .single_row_wrapper{
+    width: 100%;
+    }
+
+    .container .row-two form{
+            
+        border: 1px solid lightblue;
+        padding: 14px;
+        
+    }
+
+    .form-group .form-control{
+        position: relative;
+        width: 100%;
+        margin: 8px;
+        
+    }
+
+    .row_one{
+        padding: 10px;
+    }
+
+    .row_one .col_two{
+        width: 100%;
+
+    }
+
+    .container .row-two{
+        
+        padding: 10px;
+    }
+    
+    .form-group{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        position: relative;
+    }
+        
+    .container .row-two{
+        padding: 12px;
+    }
+
+    .form-group.inline-icon .span{
+        top: 52px;
+        right: 30px;
+    }
+
+    .form-group.inline-icon-2 .span{
+        top: 52px;
+        right: 30px;
+    }
+
+    form button{
+        padding: 14px; 
+    }
+    
+}
